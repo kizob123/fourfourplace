@@ -1,9 +1,10 @@
 import React from 'react';
+//clientID:110846181054-d9b4l339lck8mb0hsrc8lsrje3fev7lk.apps.googleusercontent.com
+//client secret: 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
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
