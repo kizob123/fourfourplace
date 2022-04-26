@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Header from '../Header';
 export default class Register extends React.Component{
     render(){
         return(
-            
+          
   <div style={{width:'auto',margin:'auto',border: '5px solid #23ee00',padding: 10+'px' }}>
   <form style={{padding: 0+'px'}}>
     <div className="mb-3" >
@@ -28,6 +29,7 @@ export default class Register extends React.Component{
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
 </div>
+
         )
     }
 }

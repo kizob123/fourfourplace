@@ -6,10 +6,9 @@ import Logins from './components/Logins';
 function App() {
   return (
     <div className="App">
-      <Header />
+      
       <Logins />
     </div>
   );
 }
-
 export default App;

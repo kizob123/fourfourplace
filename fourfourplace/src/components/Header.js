@@ -3,6 +3,7 @@ export default class Header extends React.Component{
     constructor(props){
         super(props)
         this.state= {
+            logOrReg:'Login',
             isLoggedIn:false,
             user:{
                 name:"",
@@ -13,13 +14,16 @@ export default class Header extends React.Component{
             }
         }
     }
+    componentDidMount(){
+      this.setState({logOrReg:this.props.logOrReg})
+    }
     render(){
         return (
             <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light" 
     style={{display:this.state.isLoggedIn?"none":"block"}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Login</a>
+    <a className="navbar-brand" href="#">{this.props.logOrReg}</a>
     </div>
     </nav>
 <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{display:this.state.isLoggedIn?"block":"none"}}>
