@@ -9,8 +9,8 @@ export default class Display extends React.Component{
         }
 }
 productGet = async ()=> {
-            let products=await fetch("https://api.jsonbin.io/b/626b1a3438be296761f99352/1");
-            let productsdata = await products.json()
+            let produced=await fetch("https://api.jsonbin.io/b/626b1a3438be296761f99352/1");
+            let productsdata = await produced.json()
             
             this.setState({data:productsdata.products})
     }
