@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Logins from './components/Logins';
 import Display from './components/market/Display';
 import React from 'react';
+import Sellers from './components/market/Sellers';
 
 class App extends React.Component {
   render(){
@@ -17,6 +18,7 @@ class App extends React.Component {
       <Routes>
                 <Route exact path="/" element={<Logins />} />
                 <Route path="/display" element={<Display />} />
+                <Route path="/sellers" element={<Sellers />} />
       </Routes>
 
       

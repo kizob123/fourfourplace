@@ -5,6 +5,7 @@ export default class Header extends React.Component{
         this.state= {
             logOrReg:'Login',
             isLoggedIn:false,
+            inWhere:[false,false,false],
             user:{
                 name:"",
                 photoUrl:"",
@@ -15,7 +16,7 @@ export default class Header extends React.Component{
         }
     }
     componentDidMount(){
-      this.setState({logOrReg:this.props.logOrReg, isLoggedIn:this.props.loggedin})
+      this.setState({logOrReg:this.props.logOrReg, isLoggedIn:this.props.loggedin,inWhere:[this.props.one,this.props.two,this.props.three]})
     }
     render(){
         return (
@@ -35,16 +36,24 @@ export default class Header extends React.Component{
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="/display" style={{fontWeight:this.state.inWhere[0]?"bold":"normal"}}>Display</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <a className="nav-link" href="/sellers" style={{fontWeight:this.state.inWhere[1]?"bold":"normal"}}>Sellers</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
+       
         
       </ul>
+      <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+  <ul className="navbar-nav">
+    <li className="nav-item">
+          <a className="nav-link text-end" href="#" style={{fontWeight:this.state.inWhere[2]?"bold":"normal"}}>Profile</a>
+        </li>
+    <li className="nav-item">
+      <a className="nav-link" href="#">Sign Out</a>
+    </li>
+  </ul>
+</div>
     </div>
   </div>
 </nav>

@@ -20,10 +20,10 @@ productGet = async ()=> {
 }
     render(){
         let productData=this.state.data[0]?this.state.data:[]
-        let prod=productData.map((v,i)=><li key={v}><Product product ={v} /></li>)
+        let prod=productData.map((v,i)=><li key={i}><Product product ={v} /></li>)
         return(
             <div>
-                <Header logOrReg={true} loggedin={true}/>
+                <Header logOrReg={false} loggedin={true} one ={true} two={false} three={false}/>
                 <ul style={{ listStyleType:"none" }}>
                     {prod}
                 </ul>
