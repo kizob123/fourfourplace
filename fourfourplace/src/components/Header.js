@@ -15,7 +15,7 @@ export default class Header extends React.Component{
         }
     }
     componentDidMount(){
-      this.setState({logOrReg:this.props.logOrReg})
+      this.setState({logOrReg:this.props.logOrReg, isLoggedIn:this.props.loggedin})
     }
     render(){
         return (

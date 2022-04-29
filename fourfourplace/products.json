@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "email": "kizob123@gmail.com",
+       "name":"Iwuchukwu Obieze",
+      "products": {
+        "one":["phone","link to photo","details","price"],
+        "two":["battery","link to photo","details","price"],
+        "three":["screen","link to photo","details","price"],
+        "four":["laptop","link to photo","details","price"]
+      }
+    }
+  ]
+}

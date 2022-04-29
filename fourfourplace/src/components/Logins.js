@@ -14,7 +14,7 @@ export default class Logins extends React.Component{
         console.log(this.state);
         return(
             <div>
-            <Header logOrReg={this.state.headw}/>
+            <Header logOrReg={this.state.headw} loggedin={false}/>
             <div style={{width:33+'%'}}>
                 <div style={{display: this.state.logNotReg?"block":'none'}}><Login /></div>
                 <div style={{display: this.state.logNotReg?"none":'block'}}><Register /></div>
