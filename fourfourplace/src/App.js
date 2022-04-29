@@ -15,7 +15,7 @@ class App extends React.Component {
 
       
       <Routes>
-                <Route path="/" element={<Logins />} exact />
+                <Route exact path="/" element={<Logins />} />
                 <Route path="/display" element={<Display />} />
       </Routes>
 
