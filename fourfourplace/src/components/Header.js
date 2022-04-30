@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 export default class Header extends React.Component{
     constructor(props){
         super(props)
@@ -24,22 +25,22 @@ export default class Header extends React.Component{
     <nav className="navbar navbar-expand-lg navbar-light bg-light" 
     style={{display:this.state.isLoggedIn?"none":"block"}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">{this.props.logOrReg}</a>
+    <h2 className="navbar-brand" href="#">{this.props.logOrReg}</h2>
     </div>
     </nav>
 <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{display:this.state.isLoggedIn?"block":"none"}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">4-4Places</a>
+    <Link className="navbar-brand" to={{pathname:'/display'}}>4-4Places</Link>
     
       <i className="fas fa-bars"></i>
    
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/display" style={{fontWeight:this.state.inWhere[0]?"bold":"normal"}}>Display</a>
+          <Link className="nav-link active" aria-current="page"  to={{pathname:'/display'}} style={{fontWeight:this.state.inWhere[0]?"bold":"normal"}}>Display</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/sellers" style={{fontWeight:this.state.inWhere[1]?"bold":"normal"}}>Sellers</a>
+          <Link className="nav-link"  to={{pathname:'/sellers'}} style={{fontWeight:this.state.inWhere[1]?"bold":"normal"}}>Sellers</Link>
         </li>
        
         
@@ -47,10 +48,10 @@ export default class Header extends React.Component{
       <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
   <ul className="navbar-nav">
     <li className="nav-item">
-          <a className="nav-link text-end" href="#" style={{fontWeight:this.state.inWhere[2]?"bold":"normal"}}>Profile</a>
+          <Link className="nav-link text-end" to={{pathname:'/profile'}} style={{fontWeight:this.state.inWhere[2]?"bold":"normal"}}>Profile</Link>
         </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Sign Out</a>
+      <Link className="nav-link"  to={{pathname:'/signout'}}>Sign Out</Link>
     </li>
   </ul>
 </div>

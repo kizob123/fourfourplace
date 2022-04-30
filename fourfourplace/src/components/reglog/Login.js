@@ -44,7 +44,7 @@ export default class Login extends React.Component{
 <Link className="card-body" to={{pathname:'/display'}} style={{display:this.state.loggedIn?"block":"none"}}>
             
            
-            <a href="#" className="btn btn-primary">Go to display</a>
+            <button href="#" className="btn btn-primary">Go to display</button>
         </Link>
 </div>
 
