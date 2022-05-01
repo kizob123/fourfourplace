@@ -5,8 +5,8 @@ export default class Register extends React.Component{
          
         return(
        
-  <div style={{width:'auto',margin:'auto',border: '5px solid #23ee00',padding: 10+'px' }}>
-  <form style={{padding: 0+'px'}} onSubmit={async (e)=>{
+  <div>
+  <form onSubmit={async (e)=>{
     e.preventDefault()
     let logon ={
       

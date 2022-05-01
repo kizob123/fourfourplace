@@ -10,8 +10,8 @@ export default class Login extends React.Component{
   }
     render(){
         return(
-        <div style={{width:'auto',margin:'auto',border: '5px solid #23ee00',padding: 10+'px' }}>
-  <form style={{padding: 0+'px',display:this.state.loggedIn?"none":"block"}} onSubmit={async (e)=>{
+        <div>
+  <form style={{display:this.state.loggedIn?"none":"block"}} onSubmit={async (e)=>{
     e.preventDefault()
 
     let res =await fetch('https://api.jsonbin.io/b/626b2013019db4679693108b')

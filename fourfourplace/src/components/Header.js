@@ -9,6 +9,7 @@ export default class Header extends React.Component{
             inWhere:[false,false,false],
             user:{
                 name:"",
+                email:"",
                 photoUrl:"",
                 notification:0,
                 sales:0

@@ -11,18 +11,14 @@ import Sellers from './components/market/Sellers';
 class App extends React.Component {
   render(){
   return (
-    <div className="App">
-      
-
+    <div className="App" >
       
       <Routes>
                 <Route exact path="/" element={<Logins />} />
                 <Route path="/display" element={<Display />} />
                 <Route path="/sellers" element={<Sellers />} />
       </Routes>
-
-      
-           
+     
     </div>
   );
 }}

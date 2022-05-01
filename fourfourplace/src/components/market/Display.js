@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header';
+import Ads from '../recommendations/Ads';
+import TopRatings from '../recommendations/TopRatings';
 import Product from './Product';
 export default class Display extends React.Component{
     constructor(props){
@@ -24,10 +26,21 @@ productGet = async ()=> {
         return(
             <div>
                 <Header logOrReg={false} loggedin={true} one ={true} two={false} three={false}/>
+                <div  className='container '>
+            <div className='left-page'>
+                <TopRatings />
+            </div>
+            <div className="mid-page">
                 <ul style={{ listStyleType:"none" }}>
                     {prod}
                 </ul>
+                </div>
+            <div className='right-page'>
+                <Ads />
             </div>
+                </div>
+                </div>
+           
         )
     }
 }

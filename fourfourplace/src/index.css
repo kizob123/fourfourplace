@@ -12,3 +12,18 @@ code {
     monospace;
    
 }
+.container{
+ display: flex;
+
+}
+.mid-page{
+ width: 60%;
+}
+.left-page{
+ background-color: blue;
+width:20%
+}
+.right-page{
+ background-color: brown;
+ width:20%
+}

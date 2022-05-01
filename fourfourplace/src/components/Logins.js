@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
+import Ads from './recommendations/Ads';
+import TopRatings from './recommendations/TopRatings';
 import Login from './reglog/Login';
 import Register from './reglog/Register';
 export default class Logins extends React.Component{
@@ -15,12 +18,15 @@ export default class Logins extends React.Component{
         return(
             <div>
             <Header logOrReg={this.state.headw} loggedin={false}/>
-            <div style={{width:33+'%'}}>
+
+            <div  className='container '>
+            <div className='left-page'>
+                <TopRatings />
+            </div>
+            <div className="mid-page">
                 <div style={{display: this.state.logNotReg?"block":'none'}}><Login /></div>
                 <div style={{display: this.state.logNotReg?"none":'block'}}><Register /></div>
-                
-
-                <div className="btn btn-primary" onClick={()=>{
+                <div className="btn btn-dark" onClick={()=>{
                     this.setState((prev)=>{
                         let test = prev.logNotReg
                         let h=!test?'Login':'Register'
@@ -32,7 +38,16 @@ export default class Logins extends React.Component{
                     })
                 }}>You {this.state.logNotReg?<span>don't</span>:<span>already</span>} have an account?</div>
             </div>
+            <div className='right'>
+                <Ads />
             </div>
+            
+                
+                
+            </div>
+            
+            </div>
+            
         )
     }
 }
