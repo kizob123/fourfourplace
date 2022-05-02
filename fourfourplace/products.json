@@ -9,7 +9,11 @@
         "two":["battery","link to photo","details","price"],
         "three":["screen","link to photo","details","price"],
         "four":["laptop","link to photo","details","price"]
-      }
+      },
+      "ads":true,
+      "numberOfSales":40,
+      "honestyRating":10
     }
+    
   ]
 }

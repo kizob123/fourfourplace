@@ -10,8 +10,14 @@ import Header from './components/Header';
 import Ads from './components/recommendations/Ads';
 import TopRatings from './components/recommendations/TopRatings';
 import Login from './components/reglog/Login';
+let profile ={
+  name:"hello"
 
+}
 class App extends React.Component {
+ componentDidMount(){
+   fetch("./component/reglog/profile.json").then((data)=>console.log(data.json()))
+ }
   render(){
   return (
     <div className="App" >

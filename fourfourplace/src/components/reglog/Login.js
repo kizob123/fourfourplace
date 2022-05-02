@@ -8,6 +8,7 @@ export default class Login extends React.Component{
     this.state={
       loggedIn:false
     }
+    
   }
     render(){
         return(
@@ -47,7 +48,7 @@ export default class Login extends React.Component{
 <Link className="card-body" to={{pathname:'/display'}} style={{display:this.state.loggedIn?"block":"none"}}>
             
            
-            <button href="#" className="btn btn-primary">Go to display</button>
+            <button className="btn btn-primary">Go to display</button>
         </Link>
 </div>
 

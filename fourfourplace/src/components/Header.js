@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 export default function Header(props){
     const loc = useLocation()
-    
+    const logOrReg =loc.pathname==='/login'||'/register'
+    const log =loc.pathname==='/login'
         return (
             <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light" 
-    style={{display:loc.pathname==='/'?"block":"none"}}>
+    style={{display:logOrReg?"block":"none"}}>
   <div className="container-fluid">
-    <h2 className="navbar-brand" href="#">Login</h2>
+    <h2 className="navbar-brand">{log?"Login":"Register"}</h2>
     </div>
     </nav>
 <nav className="navbar navbar-expand-lg navbar-light bg-light"
-  style={{display:loc.pathname==='/'?"none":"block"}}>
+  style={{display:logOrReg?"none":"block"}}>
   <div className="container-fluid">
     <Link className="navbar-brand" to={{pathname:'/display'}}>4-4Places</Link>
     
