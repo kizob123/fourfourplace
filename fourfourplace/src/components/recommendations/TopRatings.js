@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
-export default class TopRatings extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
-    render(){
+import React from 'react';
+export default function TopRatings(){
+    
         return(
             <div>
                 test
             </div>
         )
-    }
+    
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header';
+import RegisterORLogin from '../RegisterORLogin';
 export default class Register extends React.Component{
     render(){
          
@@ -60,8 +61,9 @@ export default class Register extends React.Component{
     <label htmlFor="password" className="form-label">Password</label>
     <input type="password" className="form-control" id="password"/>
   </div>
-  
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <div className='container'>
+  <button type="submit" className="btn btn-primary">Submit</button><RegisterORLogin/>
+  </div>
 </form>
 </div>
 

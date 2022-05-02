@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Header from '../Header';
+import React from 'react';
 import Person from './Person';
 export default class Sellers extends React.Component{
     constructor(props){
@@ -26,11 +25,11 @@ export default class Sellers extends React.Component{
         
 
         return (
-            <div>
-                <Header logOrReg={false} loggedin={true} one ={false} two={true} three={false}/>
-               
+            <ul style={{ listStyleType:"none" }}>
                 {each_person}
-            </div>
+            </ul>
+                
+            
         )
     }
 

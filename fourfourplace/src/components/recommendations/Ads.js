@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-export default class Ads extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
-    render(){
+import React from 'react';
+export default function Ads(){
+    
+    
         return(
             <div>
                 test
             </div>
         )
-    }
+    
 }

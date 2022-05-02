@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header';
+import RegisterORLogin from '../RegisterORLogin';
 export default class Login extends React.Component{
   constructor(){
     super()
@@ -39,7 +40,9 @@ export default class Login extends React.Component{
     <input type="password" className="form-control" id="password"/>
   </div>
   
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <div className='container'>
+  <button type="submit" className="btn btn-primary">Submit</button><RegisterORLogin/>
+  </div>
 </form>
 <Link className="card-body" to={{pathname:'/display'}} style={{display:this.state.loggedIn?"block":"none"}}>
             
