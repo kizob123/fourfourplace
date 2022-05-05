@@ -8,7 +8,7 @@ export default function Main(){
             <div className='grids container'>
                 <div className='left-pane'>
                     <Routes>
-                        <Route path='*' element={<LoginPage />}/>
+                        <Route path='/' element={<LoginPage />}/>
                     </Routes>
                     </div>
                 <div className='right-pane'>
