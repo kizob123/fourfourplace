@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import LoginOrRegister from './LoginOrRegister'
 export function Register(){
     return(
-        <div className = 'card-t'>
+        
         <form>
             <input type='text' name='fname' placeholder='First Name' required/><br/>
             <input type='text' name='lname' placeholder='Last Name' required/><br/>
@@ -11,6 +11,6 @@ export function Register(){
             <input type='password' name='password' placeholder='password' required/><br/>
             <LoginOrRegister />
         </form>
-        </div>
+        
     )
 }
