@@ -1,45 +1,32 @@
 
-import './App.css';
 import { Route, Routes} from 'react-router-dom'
-import Register from './components/reglog/Register';
-import Logins from './components/Logins';
-import Display from './components/market/Display';
-import React from 'react';
-import Sellers from './components/market/Sellers';
-import Header from './components/Header';
-import Ads from './components/recommendations/Ads';
-import TopRatings from './components/recommendations/TopRatings';
-import Login from './components/reglog/Login';
-let profile ={
-  name:"hello"
 
-}
+import React from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+
+
 class App extends React.Component {
- componentDidMount(){
-   fetch("./component/reglog/profile.json").then((data)=>console.log(data.json()))
- }
+  constructor(props){
+    super(props)
+   
+  }
+
   render(){
   return (
-    <div className="App" >
-      <Header />
-      
-      <div  className='container '>
-      <div className='left-page'>
-        <TopRatings />
-      </div>
-      <div className='mid-page'>
-      <Routes>
-                <Route exact path="*" element={<Logins />} />
-                
-                <Route path="/display" element={<Display />} />
-                <Route path="/sellers" element={<Sellers />} />
-      </Routes>
-      </div>
-      <div className='right-page'>
-          <Ads />
-      </div>
-      </div>
+    <>
+    <div className='page-width'>
+      <Header/>
     </div>
+    <div >
+      <Main />
+    </div>
+    <div className = 'page-width-footer'>
+      <Footer />
+    </div>
+    </>
   );
 }}
 export default App;

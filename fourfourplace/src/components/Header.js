@@ -1,47 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-export default function Header(props){
-    const loc = useLocation()
-    const logOrReg =loc.pathname==='/login'||'/register'
-    const log =loc.pathname==='/login'
-        return (
-            <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" 
-    style={{display:logOrReg?"block":"none"}}>
-  <div className="container-fluid">
-    <h2 className="navbar-brand">{log?"Login":"Register"}</h2>
-    </div>
-    </nav>
-<nav className="navbar navbar-expand-lg navbar-light bg-light"
-  style={{display:logOrReg?"none":"block"}}>
-  <div className="container-fluid">
-    <Link className="navbar-brand" to={{pathname:'/display'}}>4-4Places</Link>
-    
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page"  to={{pathname:'/display'}} style={{}}>Display</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link"  to={{pathname:'/sellers'}} style={{}}>Sellers</Link>
-        </li>
-       
-        
-      </ul>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-  <ul className="navbar-nav">
-    <li className="nav-item">
-          <Link className="nav-link text-end" to={{pathname:'/profile'}} style={{}}>Profile</Link>
-        </li>
-    <li className="nav-item">
-      <Link className="nav-link"  to={{pathname:'/signout'}}>Sign Out</Link>
-    </li>
-  </ul>
-</div>
-    </div>
-  </div>
-</nav>
+import React, { Component } from 'react';
+import { useLocation, useState } from 'react-router-dom';
+export default function Header(){
+    const {pathname} = useLocation();
+    const inLoggin = pathname === '/' || pathname === '/login'
+    const inLoginORReg = pathname === '/' || pathname === '/login'||pathname==='/register'
+    return(
+    <div>
+
+    <nav className = 'navbar container' >
+        <h3 className='logo'>4-4 Places</h3>
+        <div className='navbar-contents'>
+            {/*not logged in*/}
+            <div className = 'navbar-login' style = {{display: inLoginORReg?'flex':'none'}}>
+               {inLoggin?"Login":"Register"}
             </div>
-        )
-    }
+            {/*logged in*/}
+            <div className = 'navbar-in' style = {{display: !inLoginORReg ? 'flex' : 'none'}}>
+                <ul className='market'>
+                        <li>Display</li>
+                        <li>Sellers</li>
+                    </ul>
+                <ul className = 'personal' >
+                    <li> Profile </li> 
+                    <li> SignOut </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    )
+}
