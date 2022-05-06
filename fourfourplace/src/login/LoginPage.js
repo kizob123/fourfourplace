@@ -4,7 +4,7 @@ import { Login } from '../login/Login';
 import { Register } from '../login/Register';
 export default function LoginPage(){
     return(
-        <div>
+        <div className='card-t'>
         <Routes>
             <Route path='/' element={<Login />}/>
             <Route path='/register' element={<Register />}/>

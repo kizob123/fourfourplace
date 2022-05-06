@@ -1,7 +1,7 @@
 
 import { Route, Routes} from 'react-router-dom'
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoginPage from './login/LoginPage';
@@ -9,13 +9,18 @@ import Ratings from './components/Ratings';
 
 
 
-class App extends React.Component {
-  constructor(props){
-    super(props)
-   
-  }
+function App () {
+ 
+  
+let callBackEnd = async()=>{
+        const response = await fetch("api/post")
+        console.log(response);
+      }
+    useEffect(()=>{
+        callBackEnd()
+        //console.log(callBackEnd());
+    })
 
-  render(){
   return (
     <>
     <div className='page-width'>
@@ -36,5 +41,5 @@ class App extends React.Component {
     </div>
     </>
   );
-}}
+}
 export default App;

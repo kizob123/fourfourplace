@@ -2,21 +2,31 @@ import React, { Component, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 export default function LoginOrRegister(){
      let {pathname}= useLocation()
-     let [logOrReg, setLogOrReg]= useState('Login')
+
+
+     let logOrReg =''
+     if (pathname === '/')
+     logOrReg ='Login'
+     else logOrReg='Register'
+
+    let have = (pathname === '/'?'require':'have')
     let navigate=useNavigate()
     let handleAccountStatus=()=>{
-        if(pathname==='/'){
+    if(pathname==='/'){
        navigate('/register')
-       setLogOrReg('Register')
     }
-       if(pathname==='/register')
+       
+    if(pathname==='/register')
        navigate('/')
-       setLogOrReg('Login')
+       
     }
     return(
         <div className='reg-login'>
 
-            <input type='submit' className='btn' value={logOrReg} /><div className='btn' onClick={handleAccountStatus}>Do you have|require an account?</div>
+            <input type='submit' className='btn' value={logOrReg} />
+            <div className='btn' onClick={handleAccountStatus}>
+                Do you {have} an account?
+                </div>
         </div>
     )
 }

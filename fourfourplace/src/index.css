@@ -17,6 +17,9 @@ input:not([type='submit']){
   border-bottom-width: 0.1rem;
 
 }
+form{
+  padding: 8px;
+}
 
 .navbar{
   display: flex;
@@ -83,14 +86,14 @@ input:not([type='submit']){
   margin: 0 auto;
   
   height: 20rem;
-  background-color: rgb(178, 170, 161);
 }
 
 .card-t{
   border-radius: 10px;
-  border-width: 5px;
+  border-width: 1px;
+  box-shadow: 2px;
+  border-style: solid;
   border-color: black;
-  
   
 }
 .footer{

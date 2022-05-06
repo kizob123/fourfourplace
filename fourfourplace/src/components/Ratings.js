@@ -6,7 +6,7 @@ export default class Ratings extends React.Component{
     render(){
         return(
             <>
-            ratings
+            
             </>
         )
     }
