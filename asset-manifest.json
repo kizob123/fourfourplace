@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/fourfourplace/static/css/main.42c30392.chunk.css",
-    "main.js": "/fourfourplace/static/js/main.9383e0ea.chunk.js",
-    "main.js.map": "/fourfourplace/static/js/main.9383e0ea.chunk.js.map",
-    "runtime-main.js": "/fourfourplace/static/js/runtime-main.1d593399.js",
-    "runtime-main.js.map": "/fourfourplace/static/js/runtime-main.1d593399.js.map",
-    "static/css/2.8c0e6b67.chunk.css": "/fourfourplace/static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.27625cb5.chunk.js": "/fourfourplace/static/js/2.27625cb5.chunk.js",
-    "static/js/2.27625cb5.chunk.js.map": "/fourfourplace/static/js/2.27625cb5.chunk.js.map",
-    "static/js/3.1f944ab3.chunk.js": "/fourfourplace/static/js/3.1f944ab3.chunk.js",
-    "static/js/3.1f944ab3.chunk.js.map": "/fourfourplace/static/js/3.1f944ab3.chunk.js.map",
+    "main.css": "/fourfourplace/static/css/main.37e20f17.css",
+    "main.js": "/fourfourplace/static/js/main.2628f540.js",
+    "static/js/787.a5114727.chunk.js": "/fourfourplace/static/js/787.a5114727.chunk.js",
     "index.html": "/fourfourplace/index.html",
-    "static/css/2.8c0e6b67.chunk.css.map": "/fourfourplace/static/css/2.8c0e6b67.chunk.css.map",
-    "static/css/main.42c30392.chunk.css.map": "/fourfourplace/static/css/main.42c30392.chunk.css.map",
-    "static/js/2.27625cb5.chunk.js.LICENSE.txt": "/fourfourplace/static/js/2.27625cb5.chunk.js.LICENSE.txt"
+    "main.37e20f17.css.map": "/fourfourplace/static/css/main.37e20f17.css.map",
+    "main.2628f540.js.map": "/fourfourplace/static/js/main.2628f540.js.map",
+    "787.a5114727.chunk.js.map": "/fourfourplace/static/js/787.a5114727.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d593399.js",
-    "static/css/2.8c0e6b67.chunk.css",
-    "static/js/2.27625cb5.chunk.js",
-    "static/css/main.42c30392.chunk.css",
-    "static/js/main.9383e0ea.chunk.js"
+    "static/css/main.37e20f17.css",
+    "static/js/main.2628f540.js"
   ]
 }
