@@ -1,0 +1,37 @@
+input:not([type='submit']){
+  border-width: 0;
+  border-bottom-width: 0.1rem;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+input:focus{
+  outline: none;
+
+}
+.choose-buy_sell{
+  display: inline;
+}
+.top-input{
+  margin-top: 2rem;
+}
+.end-input{
+  margin-bottom: 2rem;
+}
+.form{
+  width: max-content;
+}
+
+form{
+  padding: 8px;
+}
+.btn{
+  background-color: rgb(106, 169, 202);
+  
+}
+.btn[type='submit']{
+margin-left: 2rem;
+}
+input{
+  margin: 2px;
+}

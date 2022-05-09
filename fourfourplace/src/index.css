@@ -12,14 +12,8 @@ body {
 ul{
   list-style-type: none;
 }
-input:not([type='submit']){
-  border-width: 0;
-  border-bottom-width: 0.1rem;
 
-}
-form{
-  padding: 8px;
-}
+
 
 .navbar{
   display: flex;
@@ -95,27 +89,4 @@ form{
   border-style: solid;
   border-color: black;
   
-}
-.footer{
-  
-  
-  background-color: blue;
-  color: wheat;
-  text-align: center;
-}
-.page-width-footer{
-  width: 100%;
-  background-color: blue;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-.btn{
-  background-color: rgb(106, 169, 202);
-}
-
-input{
-  margin: 2px;
 }
