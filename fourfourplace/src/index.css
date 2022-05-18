@@ -7,6 +7,8 @@ body {
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  
 }
 
 ul{
@@ -70,8 +72,8 @@ ul{
 }
 .grids{
   display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 100% 100%;
+  grid-template-columns: 60% 40%;
+  
   position: relative;
   top: 2rem;
   height: 100%;
@@ -79,9 +81,15 @@ ul{
 .left-pane{
   margin: 0 auto;
   
-  height: 20rem;
+  height: 100%;
+  width: 100%;
 }
-
+.right-pane{
+  margin: 0 auto;
+  
+  height: 100%;
+  width: 100%;
+}
 .card-t{
   border-radius: 10px;
   border-width: 1px;
@@ -89,4 +97,11 @@ ul{
   border-style: solid;
   border-color: black;
   
+}
+.warn{
+  color:red;
+  font-size: smaller;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-weight: bolder;
 }

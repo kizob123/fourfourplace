@@ -23,7 +23,7 @@ export default function LoginOrRegister(){
     return(
         <div className='reg-login'>
 
-            <input type='submit' className='btn' value={logOrReg} />
+            <input type='submit' className='btn btn2' value={logOrReg} />
             <div className='btn' onClick={handleAccountStatus}>
                 Do you {have} an account?
                 </div>

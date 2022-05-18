@@ -7,34 +7,36 @@ import Footer from './components/Footer';
 import LoginPage from './login/LoginPage';
 import Ratings from './components/Ratings';
 
+export let pet ='hate'
 
 
 class App extends React.Component{
  
 
-  async  componentDidMount(){
-        console.log('hr')
-        fetch('/post', {
-            method: 'GET',
-            //mode: "no-cors",
+  // async  componentDidMount(){
+  //       console.log('hr')
+  //       fetch('/post', {
+  //           method: 'GET',
+  //           //mode: "no-cors",
 
-            headers: {
-              'Access-Control-Allow-Origin': "*",
-              Accept: '*/*'
+  //           headers: {
+  //             'Access-Control-Allow-Origin': "*",
+  //             Accept: '*/*'
 
-            }
+  //           }
 
             
-          }).then((data) =>{console.log(data);
-            data.json().then(jsoninfo=>console.log(jsoninfo))
-          }
-          )
-          //.then(d => setData(d[0].fname))
-          .catch((e) => console.log(e))
+  //         }).then((data) =>{console.log(data);
+  //           data.json().then(jsoninfo=>console.log(jsoninfo))
+  //         }
+  //         )
+  //         //.then(d => setData(d[0].fname))
+  //         .catch((e) => console.log(e))
         
 
-    }
+  //   }
 render(){
+  console.log(pet,'in app');
   return (
     <>
     <div className='page-width'>
@@ -42,12 +44,18 @@ render(){
     </div>
     
     <div className='grids container'>
-                <div className='left-pane'>
+                <div className='left-pane' style={{background:'red'}}>
                     <Routes>
                         <Route path='*' element={<LoginPage />}/>
+                        
                     </Routes>
                     </div>
-                <div className='right-pane'>
+                <div className = 'right-pane'
+                style = {
+                  {
+                    background: 'blue'
+                  }
+                } >
                     <Ratings />
                 </div>      
             </div>

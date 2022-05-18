@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { useLocation, useState } from 'react-router-dom';
+import { useLocation, useNavigate, useState } from 'react-router-dom';
 export default function Header(){
     const {pathname} = useLocation();
+    const navigate = useNavigate()
     const inLoggin = pathname === '/' || pathname === '/login'
     const inLoginORReg = pathname === '/' || pathname === '/login'||pathname==='/register'
+    const inDisplay = pathname==='/display'
+    const inSellers = pathname==='/sellers'
+    const inProfile = pathname==='/profile'
+     
     return(
     <div>
 
@@ -17,12 +22,46 @@ export default function Header(){
             {/*logged in*/}
             <div className = 'navbar-in' style = {{display: !inLoginORReg ? 'flex' : 'none'}}>
                 <ul className='market'>
-                        <li>Display</li>
-                        <li>Sellers</li>
+                        <li style = {
+                            {
+                                fontWeight: inDisplay ? "bold" : "normal",
+                                cursor: 'pointer'
+                            }
+                        }
+                        onClick = {
+                            ()=>{
+                                navigate('/display')
+                            }
+                        }>Display</li>
+                        <li style = {
+                            {
+                                fontWeight: inSellers ? "bold" : "normal",
+                                cursor: 'pointer'
+                            }
+                        }
+                        onClick = {
+                            () => {
+                                navigate('/sellers')
+                            }
+                        } > Sellers </li>
                     </ul>
                 <ul className = 'personal' >
-                    <li> Profile </li> 
-                    <li> SignOut </li> 
+                    <li style = {
+                        {
+                            fontWeight: inProfile ? "bold" : "normal",
+                            cursor: 'pointer'
+                        }
+                    }
+                    onClick = {
+                        () => {
+                            navigate('/profile')
+                        }
+                    }> Profile </li> 
+                    <li style = {
+                        {
+                            cursor: 'pointer'
+                        }
+                    }> SignOut </li> 
                 </ul>
             </div>
         </div>
