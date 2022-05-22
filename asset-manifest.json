@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fourfourplace/static/css/main.f1d9b800.css",
-    "main.js": "/fourfourplace/static/js/main.3fe88c1f.js",
+    "main.js": "/fourfourplace/static/js/main.2ad167c7.js",
     "static/js/787.a5114727.chunk.js": "/fourfourplace/static/js/787.a5114727.chunk.js",
     "index.html": "/fourfourplace/index.html",
     "main.f1d9b800.css.map": "/fourfourplace/static/css/main.f1d9b800.css.map",
-    "main.3fe88c1f.js.map": "/fourfourplace/static/js/main.3fe88c1f.js.map",
+    "main.2ad167c7.js.map": "/fourfourplace/static/js/main.2ad167c7.js.map",
     "787.a5114727.chunk.js.map": "/fourfourplace/static/js/787.a5114727.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1d9b800.css",
-    "static/js/main.3fe88c1f.js"
+    "static/js/main.2ad167c7.js"
   ]
 }
