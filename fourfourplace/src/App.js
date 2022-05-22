@@ -44,18 +44,14 @@ render(){
     </div>
     
     <div className='grids container'>
-                <div className='left-pane' style={{background:'red'}}>
+                <div className='left-pane'>
                     <Routes>
                         <Route path='*' element={<LoginPage />}/>
                         
                     </Routes>
                     </div>
                 <div className = 'right-pane'
-                style = {
-                  {
-                    background: 'blue'
-                  }
-                } >
+                 >
                     <Ratings />
                 </div>      
             </div>
