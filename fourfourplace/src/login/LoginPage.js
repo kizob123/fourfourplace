@@ -3,13 +3,14 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Display from '../components/Market/Display';
 import Sellers from '../components/Market/Sellers';
 import Profile from '../components/Profile';
+import SignOut from '../components/SignOut';
 
 import { Login } from '../login/Login';
 import { Register } from '../login/Register';
 export default function LoginPage(){
    const [userInfo,setUserInfo]=useState(null)
    let data =(data)=>{
-       console.log(data);
+       console.log(data,'loginp');
        setUserInfo(data)
    }
     
@@ -23,6 +24,7 @@ export default function LoginPage(){
             <Route path='/display' element={<Display userData={userInfo}/>}/>
             <Route path='/sellers' element={<Sellers userData={userInfo}/>}/>
             <Route path='/profile' element={<Profile userData={userInfo}/>}/>
+            <Route path='/signout' element={<SignOut userData={data}/>}/>
         </Routes>
         </div>
 

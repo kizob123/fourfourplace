@@ -21,8 +21,8 @@ let handlePost =async(e)=>{
         
         body[i.name] = i.value
     }
-    
-    const result = await fetch('/login/login',{
+    console.log(body);
+    const result = await fetch('/login',{
        method: 'POST',
        headers:{
            'Access-Control-Allow-Origin': "*",

@@ -5,18 +5,17 @@ import {
     useNavigate
 } from 'react-router-dom'
 import Sells from "./Sells";
-export default function Sellers(props){
+export default function EachSale(props){
     
-       const navigate = useNavigate()
-       useEffect(() => {
-           console.log(props.userData, 'sellers');
-           if (props.userData)
-               navigate('/')
-       })
+       
     
     
         return (
             <>
+            <h3>name</h3>
+            <div className="on-display">
+                
+            </div>
             </>
         )
     

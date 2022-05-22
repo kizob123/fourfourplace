@@ -60,6 +60,10 @@ export default function Header(){
                     <li style = {
                         {
                             cursor: 'pointer'
+                        }}
+                        onClick = {
+                        () => {
+                            navigate('/signout')
                         }
                     }> SignOut </li> 
                 </ul>

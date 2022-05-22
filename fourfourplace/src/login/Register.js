@@ -19,7 +19,7 @@ export class Register extends React.Component{
             body[i.name] = i.value
         }
         console.log(body);
-        const result = await fetch('/login/register', {
+        const result = await fetch('/register', {
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': "*",
