@@ -40,7 +40,7 @@ export class Register extends React.Component{
     return(
         <>
         <p className='warn ' style={{display:this.state.profile.error?'inline':'none', position:'absolute',}}>{this.state.profile.error?this.state.profile.error:''}  </p>
-        <form className = 'form'
+        <form className = 'form card'
         method = 'POST'
         onSubmit = {
             this.handlePost

@@ -49,7 +49,7 @@ let handlePost =async(e)=>{
         {
             console.log(state)
         }
-        <div className = 'form-container'
+        <div className = 'form-container card'
         style = {
             {
                 display: state.data ? 'none' : 'block'

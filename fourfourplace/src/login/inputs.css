@@ -1,6 +1,6 @@
 input:not([type='submit']){
   border-width: 0;
-  border-bottom-width: 0.1rem;
+  border-bottom-width: 0.2rem;
   width: 20rem;
   margin-left: 2rem;
   margin-right: 2rem;

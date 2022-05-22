@@ -50,8 +50,7 @@ render(){
                         
                     </Routes>
                     </div>
-                <div className = 'right-pane'
-                 >
+                <div className = 'right-pane'>
                     <Ratings />
                 </div>      
             </div>
